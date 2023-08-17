@@ -1,0 +1,103 @@
+/*
+Project Name: one page blog
+Project Author: Design and Codes Mehmet Han Koç
+Version: V1
+Description: This is website , blog project
+*/
+
+:root{
+    --tamplateBgColor:rgb(54, 55, 56);
+}
+
+*{
+    margin:0px;
+    padding:0;
+    box-sizing:border-box;
+}
+html{
+    font-size: 20px;
+}
+body{
+    font-family: 'Manrope', sans-serif;
+    line-height: 1.2;
+}
+a{
+    text-decoration: none;
+}
+i{
+    font-size: 1.5rem;
+}
+ul{
+    list-style-type: none;
+}
+.fSize1{
+    font-size: 1rem; /* 15 * 1 */
+}
+.fSize2{
+    font-size: 2rem; /* 15 * 2 */
+}
+.fSize3{
+    font-size: 3rem; /* 15 * 2 */
+}
+.fSize{
+    font-size: 4rem ;
+}
+img{
+    max-width: 100%;
+    height: auto;
+}
+img:hover{
+    opacity: 0.8;
+    box-shadow: 1px 1px 4px 1px  blue;
+    transition: 2s all;
+    cursor: pointer;
+}
+
+.my_clearfix::after{
+    content:"";
+    display: block;
+    clear: both;
+}
+.line-clamp5{
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 5;
+    display: -webkit-box;
+    overflow: hidden;
+  
+}
+.line-clamp8{
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 8;
+    display: -webkit-box;
+    overflow: hidden;
+  
+}
+
+.line-clamp10{
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 10;
+    display: -webkit-box;
+    overflow: hidden;
+  
+}
+/*  header*/
+.dark_mode{
+    background-color:var(--tamplateBgColor);
+    color:#ffffff;
+}
+* header{
+   background-image: url(photo-1553095066-5014bc7b7f2d.jpeg);
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-position: 50% 50%;
+  
+   height: 80vh;
+   padding-top: 10rem;
+}
+
+footer{
+    min-height: 10rem;
+    width: auto;
+    
+    color: white;
+}

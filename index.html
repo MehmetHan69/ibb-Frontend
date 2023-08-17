@@ -3,95 +3,200 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
     <!-- bootstrap link-->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT"
+      crossorigin="anonymous"
+    />
     <!--scrpt-->
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.min.js" integrity="sha384-Rx+T1VzGupg4BHQYs2gCW9It+akI2MM/mndMCy36UVfodzcJcF0GGLxZIzObiEfa" crossorigin="anonymous"></script>
-
-<!--  google font -->
-<link href="https://fonts.googleapis.com/css2?family=Manrope&display=swap" rel="stylesheet">
-
-<!-- font awsome-->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-
-     <!-- jquery  -->
-     <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
-     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-  </head>
    
-  <body data-bs-spy="scroll" data-bs-target = "#navbar_id">
+    
+    <!--  google font -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- font awsome-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- jquery  -->
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.13.1/themes/base/jquery-ui.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.1/jquery-ui.js"></script>
+
+  </head>
+
+  <body data-bs-spy="scroll" data-bs-target="#navbar_id">
     <!-- Start codes -->
 
     <!-- start Nav code-->
-        <nav id="navbar_id" class="navbar navbar-expand-lg bg-body-tertiary navbar-dark bg-dark fixed-top">
-            <div class="container"> <!-- container-fluid -->
-                <a class="navbar-brand" href="#"><i class="fa-brands fa-blogger"></i></a>
-                <!-- buttonda redirect yap -->
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                    aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="index.html">Anasayfa</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Link</a>
-                        
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                                aria-expanded="false">
-                                <i class="fa-regular fa-user text-primary"></i>
-                                
-                            </a>
-                            <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" data-bs-toggle="modal" data-bs-target="#loginId">Login</a></li>
-                                <li><a class="dropdown-item" href="#">Register</a></li>
-                                <li>
-                                    <hr class="dropdown-divider">
-                                </li>
-                                <li><a class="dropdown-item" href="#">Something else here</a></li>
-                            </ul>
-                        </li>
-                    </ul>
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                        <li class="nav-item">
-                            <button class="btn btn-primary" onclick="darkModu()"> <i class="fa-solid fa-moon"></i></button>
-                        </li>
-                    </ul>
-                    <form class="d-flex" role="search">
-                        <input id="tags" class="form-control me-2" type="search" placeholder="Arama İçin ..."
-                            aria-label="Search">
-                        <button class="btn btn-primary" type="submit">Ara</button> <!-- btn-outline-success
+    <nav
+      id="navbar_id"
+      class="navbar navbar-expand-lg bg-body-tertiary navbar-dark bg-dark fixed-top"
+    >
+      <div class="container">
+        <!-- container-fluid -->
+        <a class="navbar-brand" href="#"
+          ><i class="fa-brands fa-blogger"></i
+        ></a>
+        <!-- buttonda redirect yap -->
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="index.html"
+                >Anasayfa</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Link</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                <i class="fa-regular fa-user text-primary"></i>
+              </a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a
+                    class="dropdown-item"
+                    data-bs-toggle="modal"
+                    data-bs-target="#loginId"
+                    >Login</a
+                  >
+                </li>
+                <li><a class="dropdown-item" href="#">Register</a></li>
+                <li>
+                  <hr class="dropdown-divider" />
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">Something else here</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <button class="btn btn-primary" onclick="darkModu()">
+                <i class="fa-solid fa-moon"></i>
+              </button>
+            </li>
+          </ul>
+          <form class="d-flex" role="search">
+            <input
+              id="tags"
+              class="form-control me-2"
+              type="search"
+              placeholder="Arama İçin ..."
+              aria-label="Search"
+            />
+            <button class="btn btn-primary" type="submit">Ara</button>
+            <!-- btn-outline-success
                   -->
-                    </form>
-                </div>
-            </div>
-    
-       
+          </form>
+        </div>
+      </div>
     </nav>
     <!-- end  Nav code-->
-    
+
     <!-- start Header code-->
-    <header id="header_id"></header>
+    <header id="header_id">
+      <div class="text-white">
+        <div class="container text-center">
+          <div class="p-5 text-uppercase display-4">
+            Frontend egitimimize hoşgeldiniz
+          </div>
+          <h4>Html5 Css Js React</h4>
+          <a href="" class="btn btn-primary">Linkedin</a>
+          <a href="" class="btn btn-danger">Blog</a>
+          <a href="" class="btn btn-success">Youtube</a>
+        </div>
+      </div>
+    </header>
     <!-- end Header code-->
 
     <!-- start  main code-->
-    <main id="main_id"></main>
+    <main id="main_id">
+      <section>
+        <a href="#"
+          >Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim
+          corrupti pariatur ut temporibus cum ducimus, aliquam asperiores
+          tempore assumenda sapiente quis mollitia molestiae ullam dicta
+          suscipit voluptatem harum. Odit, non.
+        </a>
+        <ul>
+          <li>item1</li>
+        </ul>
+        <img src="blog-e1630478773246.jpg" />
+        <p class="line-clamp8">
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quod fugit
+          repellendus adipisci harum reiciendis quasi corporis non corrupti ea
+          earum, voluptas, doloremque numquam accusamus quae blanditiis beatae
+          quidem laudantium quam. A pariatur beatae eos dolorum? Quaerat
+          architecto aliquam expedita earum similique! Officia doloribus hic
+          dolore esse, velit inventore rem at fugiat fuga alias, ducimus
+          corrupti repellendus dolorem, debitis facere repellat. Sint placeat
+          distinctio obcaecati aliquam eveniet expedita tenetur temporibus
+          impedit aspernatur, quo rerum cumque libero id. Itaque est praesentium
+          aut aperiam corrupti nihil inventore hic quia. Porro repudiandae iste
+          quos! Tempore aliquam earum alias dolores sit reiciendis reprehenderit
+          aut quam et ipsum deleniti excepturi minus officia eaque laborum
+          cupiditate sed, blanditiis atque? Atque doloremque rerum illum
+          sapiente excepturi enim consequuntur. Fuga autem ad asperiores
+          laboriosam odit, atque quisquam aliquid deleniti natus dignissimos sit
+          distinctio voluptatibus vel reiciendis error nostrum adipisci earum,
+          totam corporis. Temporibus amet nemo iusto laboriosam, unde
+          voluptates!
+        </p>
+      </section>
+    </main>
     <!-- end  main code-->
 
     <!--start  Footer  code-->
-    <footer id="footer_id"></footer>
+    <footer id="footer_id" class="bg-dark">
+      <div class="text-center p-5 bg-dark" id="copy_right">2021- <span id="date_id" ></span>&copy; Bütün haklar saklıdır</div>
+    </footer>
     <!--end footer code-->
 
-      <!--End code-->
-  </body>
+    <!--End code-->
+    <script src="tamplate.js"></script>
+    <script
+    src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+    crossorigin="anonymous"
+  ></script>
+ 
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.min.js"
+    integrity="sha384-Rx+T1VzGupg4BHQYs2gCW9It+akI2MM/mndMCy36UVfodzcJcF0GGLxZIzObiEfa"
+    crossorigin="anonymous"
+  ></script>
   
+    
+  </body>
 </html>
